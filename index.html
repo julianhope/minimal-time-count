@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Minimal Time + Count — v1.0</title>
-<meta name="description" content="A minimalist browser tool for focus sessions, counting, and timed counting. No account required; settings stay in your browser.">
+<title>Free Focus Timer & Tally Counter | Minimal Time + Count</title>
+<meta name="description" content="Free online focus timer, tally counter, and timed counter in one minimalist browser tool. No account required; settings stay in your browser.">
 <link rel="canonical" href="https://minimal-time-count.invisiblebriki.workers.dev/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Minimal Time + Count">
-<meta property="og:description" content="A minimalist browser tool for focus sessions, counting, and timed counting. No account required; settings stay in your browser.">
+<meta property="og:title" content="Free Focus Timer & Tally Counter | Minimal Time + Count">
+<meta property="og:description" content="A free minimalist browser tool for focus sessions, tally counting, and timed counting. No account required.">
 <meta property="og:url" content="https://minimal-time-count.invisiblebriki.workers.dev/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Minimal Time + Count">
-<meta name="twitter:description" content="A minimalist browser tool for focus sessions, counting, and timed counting.">
+<meta name="twitter:title" content="Free Focus Timer & Tally Counter | Minimal Time + Count">
+<meta name="twitter:description" content="A free minimalist browser tool for focus sessions, tally counting, and timed counting.">
 
 <style>
 :root{color-scheme:dark}
@@ -45,10 +45,17 @@ input[type=number]{width:100%;min-height:44px;border-radius:10px;border:1px soli
 .ad-slot{height:90px;margin:0 18px 18px;display:flex;align-items:center;justify-content:center;border:1px solid #2a2e37;border-radius:10px;color:#59616e;font-size:11px;text-transform:lowercase;letter-spacing:.08em}.privacy{border-top:1px solid #252a33;padding:16px 18px 18px;text-align:center;color:#6f7784;font-size:12px}.hidden{display:none!important}
 .status{min-height:20px;text-align:center;font-size:13px;color:#929aa8;margin-top:15px}
 @media(max-width:460px){body{padding:10px}.shell{border-radius:18px}.top{padding:12px 12px 0}.main{padding:28px 16px 22px}.mode-btn{font-size:12px;padding:8px 5px}.focus-duration-grid{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){.progress>span,.slider,.slider:before{transition:none}}
+.site-intro{padding:24px 22px 4px;text-align:center}.site-intro h1{font-size:clamp(23px,5vw,32px);line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}.site-intro p{max-width:580px;margin:0 auto;color:#929aa8;font-size:14px;line-height:1.5}
+.seo-info{margin:0 18px 18px;padding:20px;border:1px solid #252a33;border-radius:14px;background:#0f1116}.seo-info h2{font-size:17px;margin:0 0 12px}.seo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.seo-item h3{font-size:14px;margin:0 0 5px;color:#e8eaee}.seo-item p,.seo-how{font-size:13px;color:#8b93a1;line-height:1.5;margin:0}.seo-how{margin-top:16px;padding-top:15px;border-top:1px solid #252a33}.seo-how strong{color:#d9dde5}@media(max-width:560px){.seo-grid{grid-template-columns:1fr}.site-intro{padding:20px 16px 2px}.seo-info{padding:17px}}
+
 </style>
 </head>
 <body>
 <section class="shell" aria-label="Minimal Time + Count">
+  <section class="site-intro" aria-labelledby="site-title">
+    <h1 id="site-title">Free Online Focus Timer, Tally Counter &amp; Timed Counter</h1>
+    <p>A minimalist browser tool for counting time, things, or both. No account required; your settings stay in your browser.</p>
+  </section>
   <div class="top">
     <div class="mode-tabs" role="tablist" aria-label="Tool mode">
       <button class="mode-btn" id="mode-focus" role="tab" aria-selected="true" aria-controls="focus-panel" tabindex="0" data-mode="focus">Focus</button>
@@ -213,6 +220,24 @@ input[type=number]{width:100%;min-height:44px;border-radius:10px;border:1px soli
       <div class="status" id="timed-status" aria-live="polite"></div>
     </section>
   </div>
+  <section class="seo-info" aria-labelledby="what-this-tool-does">
+    <h2 id="what-this-tool-does">Count time, things, or both</h2>
+    <div class="seo-grid">
+      <div class="seo-item">
+        <h3>Focus Timer</h3>
+        <p>Run configurable focus sessions with short and long breaks, optional auto-start, and completion sounds.</p>
+      </div>
+      <div class="seo-item">
+        <h3>Tally Counter</h3>
+        <p>Use a simple online counter to add, subtract, or reset a tally without creating an account.</p>
+      </div>
+      <div class="seo-item">
+        <h3>Timed Counter</h3>
+        <p>Count events while a countdown runs, useful whenever you need a tally and a timer at the same time.</p>
+      </div>
+    </div>
+    <p class="seo-how"><strong>How it works:</strong> choose a mode above and start using it immediately. Preferences such as durations and sound settings are saved locally in your browser; active timers and live counts reset when the browser session ends.</p>
+  </section>
   <div class="ad-slot" id="ad-slot" aria-label="Advertisement">ad space</div>
   <div class="privacy">Private by design · No account · Your data stays local · Free forever<div style="margin-top:8px;font-size:12px"><a href="/about.html" style="color:inherit">About</a> · <a href="/privacy.html" style="color:inherit">Privacy</a></div></div>
 </section>
